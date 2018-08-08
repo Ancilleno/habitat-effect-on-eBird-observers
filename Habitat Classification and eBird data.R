@@ -1,15 +1,12 @@
 #Ancilleno Davis
-#Geo 560 rcode
 
-#This r-code has been devloped by Ancilleno Davis in partial completion of the 
+#This r-code has been developed by Ancilleno Davis in partial completion of the 
 #requirements for PhD in Ecology Evolution and Environmental Science at Miami University in Oxford, Ohio.
 
 #The purpose of this Rcode is to import habitat classification data 
 #generated in Google Earth Engine from LAndsat 8 OLI reflectance data,
 #and determine correlations between eBird observations and habitat.
 #for the island of Grand Bahama(GB), The Bahamas
-
-
 
 #### Initial workspace parameters####
 #set seed
@@ -53,9 +50,7 @@ getmode <- function(v) { #creating this mode function allows me to get the most 
   uniqv[which.max(tabulate(match(v, uniqv)))]
 }
 
-
 #Assign the colors I would like to represent my habitat classes####
-
 
 col7class=c(#include all 7 colors including water. This will be used to plot the raster image.
   "blue", #ocean 
